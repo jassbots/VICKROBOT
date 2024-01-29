@@ -1,13 +1,10 @@
-from flask import Flask 
+from flask import Flask
+app = Flask(__name__)
 
-app = Flask ( name )
+@app.route('/')
+def hello_world():
+    return 'GreyMatters'
 
-@app . route ( ' / ' )
 
-def hello_world ( ) :
-
-    return  ' LazyDeveloperr '
-
-if name  ==  "main" :
-
-    app.run ( )
+if __name__ == "__main__":
+    app.run()
